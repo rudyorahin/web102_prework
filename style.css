@@ -73,3 +73,40 @@ button {
     margin: 1%;
     border-radius: 7px;
 }
+
+.stats-container {
+    /* background-color: red; */
+    display: flex;           /* This enables Flexbox for the container */
+    align-items: center;     /* This vertically centers the items in the container */
+    justify-content: center; /* Optionally, this horizontally centers the items */
+}
+
+
+.stats-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0 30px lightblue;
+}
+
+
+/* Extra visual appeal */
+.header {
+    background-color: #acda3a; /* Darker shade of blue */
+    /* ... other styles ... */
+}
+
+.game-card:hover {
+    box-shadow: 0 0 30px lightblue;
+    transition: box-shadow 0.3s; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #FF4500; /* Warm color for hover */
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    /* Responsive design adjustments for smaller screens */
+    .stats-container, #games-container {
+        flex-direction: column;
+    }
+}
